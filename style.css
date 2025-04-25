@@ -1,0 +1,126 @@
+@font-face {
+  src: url("../font/OpenSans-Medium.ttf");
+  font-family: OpenSans;
+}
+
+* {
+  font-family: OpenSans;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: var(--padding-container);
+  padding-right: var(--padding-container);
+  padding-top: var(--padding-container); */
+}
+
+/*Large*/
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+
+}
+:root{
+  --time-during:0.3s;
+  --color-hover:#fae7ac;
+}
+body{
+  background-color: #f5ead2;
+}
+
+
+/* Start header */
+header{
+display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo{
+  width: 150px;
+}
+header .links{
+  padding-left: 0;
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+header .links a{
+  display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: var(--time-during);
+    color: #000;
+    font-weight: bold;
+}
+header .links a:hover{
+  background-color: #d9b685;
+  /* border-bottom: 1px solid red; */
+  color: #2da9dc;
+}
+header .login{
+text-decoration: none;
+  background: #2da9dc;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: #000;
+  transition: var(--time-during);
+}
+header .login:hover{
+  color: #fff;
+}
+/* End header */
+
+
+/* Start landing  */
+.landing{
+  background-image: url("img/landing_page.jpg");
+  height: calc(90vh);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.landing .over-lay{
+  position: absolute;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 65%);
+  /* z-index: 1; */
+}
+.landing .container{
+  position: absolute;
+  z-index: 2;
+  color: #fff;
+  top: 30%;
+  left: 30%;
+  text-align: center;
+  
+}
+.landing .container .info{
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: 40%; */
+  width: 400px;
+}
+.landing .container .info h1,h2{
+  margin: 5px 0;
+}
+.landing .container .info p{
+    margin-top: 0;
+      line-height: 1.7;
+}
+.landing .container .info .icons{
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+.landing .container .info .icons img{
+width: 35px;
+transition: var(--time-during);
+}
+.landing .container .info .icons img:hover{
+  transform: translateY(-10px);
+}
+/* End landing */
