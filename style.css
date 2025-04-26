@@ -383,3 +383,50 @@ display: flex;
       width: 457px;
       
 }
+
+/* End Service */
+
+/* Start About */
+.about{
+    padding-top: var(--padding-top);
+      padding-bottom: var(--padding-top);
+}
+.about .container{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+
+}
+.about .container .content{
+
+}
+.about .container .content img{
+  width:500px;
+}
+.about .container .info{
+  flex: 1;
+    /* width: 391px; */
+    padding-right: 250px;
+}
+.about .container .info p{
+text-align: center;
+  line-height: 1.7;
+  padding-bottom: 25px;
+}
+.about .container .info a{
+
+  text-align: center;
+    margin-left: 38%;
+    text-decoration: none;
+    background: var(--color-title);
+    padding: 10px 15px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: var(--time-during);
+}
+.about .container .info a:hover{
+  color: #fff;
+  /* transform: translateY(-5px); */
+}
+/* End About */
