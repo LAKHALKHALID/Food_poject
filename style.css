@@ -210,4 +210,67 @@ transform: translateY(-15px);
   /* display:block; */
   height: 100%;
 }
+.food .container .box a{
+    text-decoration: none;
+    position: absolute;
+    background: var(--color-title);
+    padding: 10px 15px;
+    color: #000;
+    border-radius: 8px;
+    left: 50%;
+    top: 111%;
+    transform: translate(-50%, -50%);
+    transition: var(--time-during);
+}
+.food .container .box:hover a{
+  top: 50%;
+}
+.food .container .box a:hover{
+  color:#fff;
+}
 /* End food */
+
+/* Start About */
+.service{
+    padding-top: var(--padding-top);
+      padding-bottom: var(--padding-top);
+}
+.service .container{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+}
+.service .container .box{
+background-color: #fff;
+width: 260px;
+text-align: center;
+padding-bottom: 20px;
+}
+.service .container .box img{
+width: 120px;
+}
+.service .container .box h2{
+    color: var(--color-title);
+      font-size: 30px;
+      margin-top: 15px;
+      text-transform: capitalize;
+}
+.service .container .box p{
+    padding: 0 8PX;
+      line-height: 1.6;
+      color: #ccc;
+}
+.service .container .box a{
+  text-decoration: none;
+  color: #000;
+  background-color: var(--color-title);
+  padding: 10px 15px;
+}
+#s3{
+  padding: 5px 0;
+  padding-bottom: 20px;
+}
+
+
+/* End About */
