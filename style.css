@@ -1,7 +1,8 @@
 @font-face {
-  src: url("font/LilitaOne-Regular.ttf");
+ src: url("font/LilitaOne-Regular.ttf");
   src: url("font/OpenSans-Medium.ttf");
   font-family: OpenSans;
+
 }
 
 * {
@@ -312,7 +313,11 @@ box-shadow:
   transition: var(--time-during);
 }
 .service .container .box:hover{
-  transform: translateY(-15px);
+  /* transform: translateY(-15px); */
+  scale: 1.05;
+  box-shadow:
+      0 1px 6px rgba(0, 0, 0, 0.2),
+      0 1px 12px rgba(0, 0, 0, 0.2);
 }
 .service .container .box img{
 width: 120px;
@@ -325,8 +330,11 @@ width: 120px;
 }
 .service .container .box p{
     padding: 0 8PX;
-      line-height: 1.6;
+      line-height: 1.7;
       color: #000;
+      margin-bottom: 25px;
+      font-size: 15PX;
+        margin-top: 15px;
 }
 .service .container .box a{
   text-decoration: none;
@@ -471,8 +479,25 @@ box-shadow:
 
   
 }
+.testimonial .container .box:hover{
+  transform: translateY(-10px);
+}
 .testimonial .container .box::after{
   content:"";
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: #04b1ff21;
+    transition: var(--time-during);
+    transform: translate(-50%, -50%);
+      z-index: 1;
+        border-radius: 15px;
+}
+.testimonial .container .box:hover::after{
+width: 100%;
+height: 100%;
 }
 .testimonial .container .box h2{}
 .testimonial .container .box .stars{}
@@ -492,6 +517,7 @@ box-shadow:
         right: -39px;
         top: -32px;
         border: 9px solid #f5ead2;
+        z-index: 3;
 }
 /* End testimonial */
 
@@ -520,6 +546,11 @@ color: #ccc;
 }
 footer .one {
   flex-basis: 25%;
+  text-align: center;
+}
+footer .one h3{
+  margin-bottom: 20PX;
+  font-size: 30PX;
 }
 footer .one img{
   width: 50px;
@@ -545,7 +576,10 @@ footer .two a:hover{
   transform: translateX(10px);
 }
 footer .three {
-  flex-basis: 25%;
+  flex-basis: 22%;
+  display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 footer .three .chest{
   display: flex;
