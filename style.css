@@ -102,19 +102,25 @@ header .login:hover{
   /* z-index: 1; */
 }
 .landing .container{
-  position: absolute;
-  z-index: 2;
+  position: relative;
+  /* z-index: 2; */
   color: #fff;
-  top: 30%;
-  left: 30%;
+  /* top: 30%;
+  left: 30%; */
   text-align: center;
+  height: 100%;
   
 }
 .landing .container .info{
+  position: absolute;
   display: flex;
   flex-direction: column;
   /* flex-basis: 40%; */
-  width: 400px;
+  width: 500px;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  /* transform: translateY(-50%); */
 }
 .landing .container .info h1,h2{
   margin: 5px 0;
@@ -122,6 +128,7 @@ header .login:hover{
 .landing .container .info p{
     margin-top: 0;
       line-height: 1.7;
+      margin-bottom: 20px;
 }
 .landing .container .info .icons{
 display: flex;
@@ -189,6 +196,7 @@ text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 60px;
 
 }
 
@@ -199,7 +207,7 @@ text-align: center;
 .about .container .info {
   flex: 1;
   /* width: 391px; */
-  padding-right: 250px;
+  padding-right: 130px;
 }
 
 .about .container .info p {
@@ -238,7 +246,7 @@ text-align: center;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 50px;
 
-    padding-top: 20px;
+    padding-top: 60px;
 }
 .food .container .box img{
   max-width: 100%;
@@ -247,29 +255,35 @@ text-align: center;
   border-radius: 20px;
   overflow: hidden;
   box-shadow:
-      0 1px 6px rgba(0, 0, 0, 0.12),
-      0 1px 12px rgba(0, 0, 0, 0.1);
+      0 1px 6px rgba(0, 0, 0, 0.5),
+      0 1px 12px rgba(0, 0, 0, 0.5);
   transition: var(--time-during);
   position: relative;
+  height: 186px;
 }
-.food .container .box .over{
-  position: absolute;
-  width: 100%;
-  height: 0%;
-  background-color: rgb(0 0 0 / 65%);
-  left: 0;
-  bottom: 0;
-  transition: var(--time-during);
-  
-}
+
 .food .container .box:hover{
-transform: translateY(-15px);
+transform: translateY(-5px);
+scale: 1.05;
 }
-.food .container .box:hover .over{
-  /* display:block; */
+
+.food .container .box .plate{
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* z-index: -1; */
+  opacity: 0;
+  transition: var(--time-during);
+}
+.food .container .box:hover .plate{
+  opacity: 1;
+}
+
+
+/* .food .container .box:hover .over{
   height: 100%;
-}
-.food .container .box a{
+} */
+/* .food .container .box a{
     text-decoration: none;
     position: absolute;
     background: var(--color-title);
@@ -280,13 +294,13 @@ transform: translateY(-15px);
     top: 111%;
     transform: translate(-50%, -50%);
     transition: var(--time-during);
-}
-.food .container .box:hover a{
+} */
+/* .food .container .box:hover a{
   top: 50%;
-}
-.food .container .box a:hover{
+} */
+/* .food .container .box a:hover{
   color:#fff;
-}
+} */
 /* End food */
 
 /* Start Service */
@@ -377,7 +391,7 @@ width: 120px;
         display: flex;
           justify-content: center;
           align-items: center;
-          padding: 20PX 0;
+          padding: 15PX 0;
 }
 .contact .container .content-form form{
       flex-basis: 45%;
