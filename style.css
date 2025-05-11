@@ -46,9 +46,9 @@ display: flex;
   align-items: center;
 }
 header .logo{
-    font-size: 25px;
-      /* font-family: sans-serif !important; */
-      color: #00abff;
+    
+      width: 120px;
+      height: 36px;
 }
 header .links{
   padding-left: 0;
@@ -65,8 +65,7 @@ header .links a{
     font-weight: bold;
 }
 header .links a:hover{
-  /* background-color: #d9b685; */
-  /* border-bottom: 1px solid red; */
+ 
   color: #fff;
   background: var(--color-title);
 }
@@ -103,10 +102,9 @@ header .login:hover{
 }
 .landing .container{
   position: relative;
-  /* z-index: 2; */
+ 
   color: #fff;
-  /* top: 30%;
-  left: 30%; */
+ 
   text-align: center;
   height: 100%;
   
@@ -115,12 +113,12 @@ header .login:hover{
   position: absolute;
   display: flex;
   flex-direction: column;
-  /* flex-basis: 40%; */
+ 
   width: 500px;
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
-  /* transform: translateY(-50%); */
+  
 }
 .landing .container .info h1,h2{
   margin: 5px 0;
@@ -206,7 +204,7 @@ text-align: center;
 
 .about .container .info {
   flex: 1;
-  /* width: 391px; */
+  
   padding-right: 130px;
 }
 
@@ -231,7 +229,7 @@ text-align: center;
 
 .about .container .info a:hover {
   color: #fff;
-  /* transform: translateY(-5px); */
+  
 }
 
 /* End About */
@@ -280,27 +278,7 @@ scale: 1.05;
 }
 
 
-/* .food .container .box:hover .over{
-  height: 100%;
-} */
-/* .food .container .box a{
-    text-decoration: none;
-    position: absolute;
-    background: var(--color-title);
-    padding: 10px 15px;
-    color: #000;
-    border-radius: 8px;
-    left: 50%;
-    top: 111%;
-    transform: translate(-50%, -50%);
-    transition: var(--time-during);
-} */
-/* .food .container .box:hover a{
-  top: 50%;
-} */
-/* .food .container .box a:hover{
-  color:#fff;
-} */
+
 /* End food */
 
 /* Start Service */
