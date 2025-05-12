@@ -28,11 +28,13 @@
 :root{
   --time-during:0.3s;
   --color-hover:#fae7ac;
-  --color-title:#2da9dc;
+  /* --color-title:#2da9dc; */
+  --color-title: #2d486d;
   --padding-top:35px;
 }
 body{
-  background-color: #f5ead2;
+  /* background-color: #f5ead2; */
+  background-color: #e0d6c8;
   
 }
 html{
@@ -80,6 +82,9 @@ text-decoration: none;
 header .login:hover{
   color: #fff;
 }
+#stare{
+  width: 42px;
+}
 /* End header */
 
 
@@ -91,6 +96,10 @@ header .login:hover{
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
+}
+#lg{
+  width: 220px;
+  margin: auto;
 }
 .landing .over-lay{
   position: absolute;
