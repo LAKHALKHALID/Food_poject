@@ -28,13 +28,13 @@
 :root{
   --time-during:0.3s;
   --color-hover:#fae7ac;
-  /* --color-title:#2da9dc; */
-  --color-title: #2d486d;
+  --color-title:#2da9dc;
+  /* --color-title: #2d486d; */
   --padding-top:35px;
 }
 body{
-  /* background-color: #f5ead2; */
-  background-color: #e0d6c8;
+  background-color: #f5ead2;
+  /* background-color: #e0d6c8; */
   
 }
 html{
@@ -548,6 +548,10 @@ color: #ccc;
 footer .one {
   flex-basis: 25%;
   text-align: center;
+}
+#im{
+  width: 130px;
+    margin-bottom: 10px;
 }
 footer .one h3{
   margin-bottom: 20PX;
